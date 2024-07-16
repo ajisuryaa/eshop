@@ -134,7 +134,7 @@ class CardProduct extends StatelessWidget {
                   children: [
                     const Icon(
                       Icons.star,
-                      color: Colors.yellow,
+                      color: Color(0xFFFFD233),
                       size: 15,
                     ),
                     const SizedBox(
@@ -145,7 +145,7 @@ class CardProduct extends StatelessWidget {
                       style: const TextStyle(
                         fontFamily: "NotoSansKR",
                         fontSize: 10,
-                        color: Colors.yellow,
+                        color: Color(0xFFFFD233),
                       ),
                     ),
                     const SizedBox(

@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.2.1
   flutter_svg: ^2.0.10+1
+  gradient_borders: ^1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +72,7 @@ flutter:
     - assets/icon/crown-1.svg
     - assets/icon/crown-2.svg
     - assets/icon/crown-3.svg
+    - assets/icon/bxs_send.svg
     - assets/images/top-10-users/cat-1.jpg
     - assets/images/top-10-users/cat-2.jpg
     - assets/images/top-10-users/cat-3.jpg

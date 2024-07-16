@@ -39,7 +39,11 @@ class Top10Users extends StatelessWidget {
                   ],
                 ),
               ),
-              Text(userName),
+              Text(userName,
+                  style: const TextStyle(
+                      fontFamily: "NotoSansKR",
+                      fontSize: 14,
+                      color: Color(0xFF616161))),
             ],
           );
         },

@@ -5,6 +5,7 @@ import 'package:eshop/widgets/carousel-with-indicator.dart';
 import 'package:eshop/widgets/search-bar.dart';
 import 'package:eshop/widgets/top-10-users.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -28,7 +29,7 @@ class _DashboardState extends State<Dashboard> {
           style: TextStyle(
               fontSize: 24,
               fontFamily: "Roboto",
-              color: Colors.purple,
+              color: Color(0xFF5D5FEF),
               fontWeight: FontWeight.bold),
         ),
       ),
@@ -181,18 +182,171 @@ class _DashboardState extends State<Dashboard> {
                 height: 220,
                 width: MediaQuery.of(context).size.width,
                 padding: const EdgeInsets.fromLTRB(16, 28, 16, 28),
-                child: const SingleChildScrollView(
+                child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("골드 계급 사용자들이예요",
-                          style: TextStyle(
-                              fontFamily: "NotoSansKR", fontSize: 12)),
-                      Text("베스트 리뷰어 🏆 Top10",
+                      const Text("LOGO Inc.",
                           style: TextStyle(
                               fontFamily: "NotoSansKR",
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18))
+                              fontSize: 14,
+                              color: Color(0xFF868686),
+                              fontWeight: FontWeight.w500)),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      const Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                              child: Center(
+                            child: Text("회사 소개",
+                                style: TextStyle(
+                                    fontFamily: "NotoSansKR",
+                                    fontSize: 13,
+                                    color: Color(0xFF868686),
+                                    fontWeight: FontWeight.w400)),
+                          )),
+                          SizedBox(
+                            height: 9,
+                            child: VerticalDivider(
+                              color: Color(0xFFC8C8C8),
+                              thickness: 1,
+                            ),
+                          ),
+                          Expanded(
+                              child: Center(
+                            child: Text("회사 소개",
+                                style: TextStyle(
+                                    fontFamily: "NotoSansKR",
+                                    fontSize: 13,
+                                    color: Color(0xFF868686),
+                                    fontWeight: FontWeight.w400)),
+                          )),
+                          SizedBox(
+                            height: 9,
+                            child: VerticalDivider(
+                              color: Color(0xFFC8C8C8),
+                              thickness: 1,
+                            ),
+                          ),
+                          Expanded(
+                              child: Center(
+                            child: Text("회사 소개",
+                                style: TextStyle(
+                                    fontFamily: "NotoSansKR",
+                                    fontSize: 13,
+                                    color: Color(0xFF868686),
+                                    fontWeight: FontWeight.w400)),
+                          )),
+                          SizedBox(
+                            height: 9,
+                            child: VerticalDivider(
+                              color: Color(0xFFC8C8C8),
+                              thickness: 1,
+                            ),
+                          ),
+                          Expanded(
+                              child: Center(
+                            child: Text("회사 소개",
+                                style: TextStyle(
+                                    fontFamily: "NotoSansKR",
+                                    fontSize: 13,
+                                    color: Color(0xFF868686),
+                                    fontWeight: FontWeight.w400)),
+                          )),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          SvgPicture.asset(
+                            "assets/icon/bxs_send.svg",
+                            width: 16,
+                            height: 16,
+                          ),
+                          const SizedBox(
+                            width: 3,
+                          ),
+                          const Text("review@logo.com",
+                              style: TextStyle(
+                                  fontFamily: "NotoSansKR",
+                                  fontSize: 13,
+                                  color: Color(0xFF868686),
+                                  fontWeight: FontWeight.w400,
+                                  height: -0.2)),
+                          Expanded(
+                            child: Container(),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(left: 5, right: 5),
+                            height: 25,
+                            decoration: BoxDecoration(
+                                border: Border.all(),
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text("KOR",
+                                    style: TextStyle(
+                                        fontFamily: "NotoSansKR",
+                                        fontSize: 14.5,
+                                        color: Color(0xFF868686),
+                                        fontWeight: FontWeight.w400)),
+                                DropdownButton(
+                                  // Add dropdown button properties here
+                                  icon: const Icon(Icons.arrow_drop_down),
+                                  iconSize: 13,
+                                  elevation: 16,
+                                  style: const TextStyle(
+                                    color: Color(0xFF868686),
+                                  ),
+                                  underline: Container(),
+                                  onChanged: (String? newValue) {
+                                    // Add onChanged function here
+                                  },
+                                  items: <String>['KOR']
+                                      .map<DropdownMenuItem<String>>(
+                                          (String value) {
+                                    return DropdownMenuItem<String>(
+                                      value: value,
+                                      child: Text(value),
+                                    );
+                                  }).toList(),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      const SizedBox(
+                        height: 16,
+                        child: Divider(
+                          thickness: 1,
+                          color: Color(0xFFC8C8C8),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      const Text("@2022-2022 LOGO Lab, Inc. (주)아무개  서울시 강남구",
+                          style: TextStyle(
+                              fontFamily: "NotoSansKR",
+                              fontSize: 10,
+                              color: Color(0xFF868686),
+                              fontWeight: FontWeight.w400,
+                              height: -0.2)),
+                      const SizedBox(
+                        height: 16,
+                      ),
                     ],
                   ),
                 ),
