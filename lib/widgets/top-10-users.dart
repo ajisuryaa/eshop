@@ -1,4 +1,4 @@
-import 'package:eshop/views/account-profile.dart';
+import 'package:eshop/views/account-profile-screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
