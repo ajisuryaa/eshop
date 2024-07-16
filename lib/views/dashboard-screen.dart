@@ -286,8 +286,9 @@ class _DashboardState extends State<Dashboard> {
                             padding: const EdgeInsets.only(left: 5, right: 5),
                             height: 25,
                             decoration: BoxDecoration(
-                                border: Border.all(),
-                                borderRadius: BorderRadius.circular(10)),
+                                border:
+                                    Border.all(color: const Color(0xFF868686)),
+                                borderRadius: BorderRadius.circular(50)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,

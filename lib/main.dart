@@ -1,4 +1,4 @@
-import 'package:eshop/views/dashboard.dart';
+import 'package:eshop/views/main-page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,10 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'eShop',
       theme: ThemeData(
-        primaryColor: Colors.white, // Atur warna putih sebagai warna utama tema
-        // Tambahan konfigurasi tema lainnya
-      ),
-      home: const Dashboard(),
+          primaryColor: Colors.white,
+          primarySwatch: Colors.blue,
+          appBarTheme: const AppBarTheme(
+            iconTheme: IconThemeData(color: Colors.black54),
+            color: Color(0xFF5D5FEF), //<-- SEE HERE
+          )),
+      home: const MainPageView(),
     );
   }
 }

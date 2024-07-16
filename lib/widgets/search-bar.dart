@@ -23,7 +23,7 @@ class _SearchBarCustomState extends State<SearchBarCustom> {
           border: const GradientBoxBorder(
             gradient:
                 LinearGradient(colors: [Color(0xFF74FBDE), Color(0xFF3C41BF)]),
-            width: 4,
+            width: 2,
           ),
           borderRadius: BorderRadius.circular(20.0)),
       child: TextField(

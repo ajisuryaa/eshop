@@ -73,6 +73,10 @@ flutter:
     - assets/icon/crown-2.svg
     - assets/icon/crown-3.svg
     - assets/icon/bxs_send.svg
+    - assets/icon/home.svg
+    - assets/icon/category.svg
+    - assets/icon/community.svg
+    - assets/icon/profile.svg
     - assets/images/top-10-users/cat-1.jpg
     - assets/images/top-10-users/cat-2.jpg
     - assets/images/top-10-users/cat-3.jpg

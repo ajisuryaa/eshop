@@ -1,3 +1,4 @@
+import 'package:eshop/views/account-profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -17,34 +18,45 @@ class Top10Users extends StatelessWidget {
           String userImage = listUsers[index]['image'];
           ;
           bool isFirstUser = index == 0;
-          return Column(
-            children: [
-              Container(
-                margin: EdgeInsets.all(5),
-                child: Stack(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(1),
-                      height: 104,
-                      width: 104,
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey, width: 0),
-                          borderRadius: BorderRadius.circular(104)),
-                      child: Image.asset(userImage, fit: BoxFit.cover),
-                    ),
-                    if (isFirstUser)
-                      Positioned(
-                          top: 0,
-                          child: SvgPicture.asset("assets/icon/crown-1.svg")),
-                  ],
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AccountProfile(
+                            title: "랭킹 1위",
+                            subtitle: "베스트 리뷰어",
+                          )));
+            },
+            child: Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.all(5),
+                  child: Stack(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.all(1),
+                        height: 104,
+                        width: 104,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey, width: 0),
+                            borderRadius: BorderRadius.circular(104)),
+                        child: Image.asset(userImage, fit: BoxFit.cover),
+                      ),
+                      if (isFirstUser)
+                        Positioned(
+                            top: 0,
+                            child: SvgPicture.asset("assets/icon/crown-1.svg")),
+                    ],
+                  ),
                 ),
-              ),
-              Text(userName,
-                  style: const TextStyle(
-                      fontFamily: "NotoSansKR",
-                      fontSize: 14,
-                      color: Color(0xFF616161))),
-            ],
+                Text(userName,
+                    style: const TextStyle(
+                        fontFamily: "NotoSansKR",
+                        fontSize: 14,
+                        color: Color(0xFF616161))),
+              ],
+            ),
           );
         },
       ),
