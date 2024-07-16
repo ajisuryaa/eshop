@@ -11,4 +11,11 @@ class SampleDatas {
     {"name": "Name 09", "image": "assets/images/top-10-users/cat-9.jpg"},
     {"name": "Name 10", "image": "assets/images/top-10-users/cat-10.jpg"}
   ];
+
+  static List<dynamic> comments = [
+    "“가격 저렴해요”",
+    "“CPU온도 고온”",
+    "“서멀작업 가능해요”",
+    "“게임 잘 돌아가요”"
+  ];
 }

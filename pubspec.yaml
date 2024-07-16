@@ -68,15 +68,20 @@ flutter:
     - assets/images/products/1.jpg
     - assets/images/products/2.jpg
     - assets/images/products/3.jpg
+    - assets/images/products/ryzen.jpg
     - assets/icon/rate-star.png
     - assets/icon/crown-1.svg
     - assets/icon/crown-2.svg
     - assets/icon/crown-3.svg
+    - assets/icon/crown.svg
     - assets/icon/bxs_send.svg
     - assets/icon/home.svg
     - assets/icon/category.svg
     - assets/icon/community.svg
     - assets/icon/profile.svg
+    - assets/icon/save-post.svg
+    - assets/icon/lightning.svg
+    - assets/icon/comment.svg
     - assets/images/top-10-users/cat-1.jpg
     - assets/images/top-10-users/cat-2.jpg
     - assets/images/top-10-users/cat-3.jpg
@@ -87,6 +92,9 @@ flutter:
     - assets/images/top-10-users/cat-8.jpg
     - assets/images/top-10-users/cat-9.jpg
     - assets/images/top-10-users/cat-10.jpg
+    - assets/images/comments/1.jpg
+    - assets/images/comments/2.jpg
+    - assets/images/comments/3.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

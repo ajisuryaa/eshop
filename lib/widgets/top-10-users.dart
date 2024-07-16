@@ -9,7 +9,7 @@ class Top10Users extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 20),
+      margin: const EdgeInsets.only(top: 20),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: listUsers.length,
@@ -23,9 +23,10 @@ class Top10Users extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const AccountProfile(
+                      builder: (context) => AccountProfile(
                             title: "랭킹 1위",
                             subtitle: "베스트 리뷰어",
+                            account: listUsers[index],
                           )));
             },
             child: Column(
