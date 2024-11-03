@@ -1,6 +1,6 @@
-# eshop
+# ESHOP
 
-A new Flutter project.
+Just UI for e-commerce app
 
 ## Getting Started
 
